@@ -46,7 +46,7 @@ line = 'nobady:*:-2:Unprivileged User:/var/empty:/usr/bin/false'
 uname, *fields, homedir, sh = line.split(':')
 print(uname)  # nobady
 print(homedir)  # /var/empty
-print(sh) # /usr/bin/false
+print(sh)  # /usr/bin/false
 
 record = ('ACME', 50, 123.45, (12, 18, 2012))
 name, *_, (*_, year) = record
@@ -62,4 +62,4 @@ def sum1(items):
     head, *tail = items
     return head + sum1(tail) if tail else head
 print(sum1(items))  # 36
-# print(sum(items)) # 36
+# print(sum(items))  # 36
