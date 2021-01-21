@@ -30,11 +30,14 @@ records = [
     ('foo', 3,4)
 ]
 
+
 def do_foo(x,y):
     print('foo', x, y)
 
+
 def do_bar(s):
     print('bar', s)
+
 
 for tag, *args in records:
     if tag == 'foo':
@@ -58,8 +61,10 @@ head, *tail = items
 print(head)  # 1
 print(tail)  # [10, 7, 4, 5, 9]
 
+
 def sum1(items):
     head, *tail = items
     return head + sum1(tail) if tail else head
+
+
 print(sum1(items))  # 36
-# print(sum(items))  # 36
